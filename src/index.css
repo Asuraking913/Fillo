@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --pdx: 5em;
+    --bg: #F9F1ED;
+    --nav: white;
+    --pdy: 1em;
+    --black: #121212;
+    --gray: #727881;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+  
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+    scrollbar-width: 50px;
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url("./fonts/Poppins-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: ubunt, sans-serif;
+    src: url("./fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: audio;
+    src: url("./fonts/Urbanist-Regular.ttf");
+}
+
+.audio {
+    font-family: audio;
+}
+
+
+.pop {
+    font-family: poppins, sans-serif;
+}
+
+.ubun {
+    font-family: ubuntu, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    /* overflow: scroll; */
+}
+
+.line {
+    line-height: 1.2em;
+}
+
+/* .back {
+    background-image: url("./assets/bg3.jpeg");
+    background-size: cover;
+    background-position: bottom;
+} */
